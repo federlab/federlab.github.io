@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<HEAD>
+
+<TITLE>Alison Feder</TITLE>
+<!--This design borrows extensively from Joshua Plotkin's site http://mathbio.sas.upenn.edu -->
+
+<STYLE type="text/css">
+
+body
+{
+margin: 20px;
+padding: 20px;
+font-family: "Avenir", sans-serif, Courier, Serif;
+
+}
+
+DIV.content
+{
+border: 0px solid #5f5f5f;
+width: 525px;
+margin: 0;
+padding: 1em;
+position: absolute;
+background-color: #FFFFFF;
+left: 240px;
+top: 50px;
+}
+
+DIV.bar
+{
+border: 0px solid #5f5f5f;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 65px;
+top: 80px;
+text-align: right;
+}
+
+
+p.link
+{
+color: black;
+font-family: "Avenir", sans-serif, Courier, Serif;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
+
+
+a:link, a:link.inlink, a:visited.inlink, a:visited
+{
+color: #0000FF;
+}
+
+
+a:link.minlink, a:visited.minlink
+{
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:hover.inlink, a:hover.minlink
+{
+color: #EEC900;
+text-decoration: none;
+font-weight: bold;
+}
+
+#coursework
+{
+display: none;
+}
+
+#abstract
+{
+display: block;
+}
+
+#research
+{
+display: none;
+}
+
+#projects
+{
+display: none;
+}
+
+#media
+{
+display: none;
+}
+
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+
+function homeShow()
+{
+document.getElementById("abstract").style.display="block";
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function courseworkShow()
+{
+document.getElementById("coursework").style.display="block";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function researchShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function projectsShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="block";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function mediaShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("media").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+
+
+}
+
+</SCRIPT>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32460469-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</HEAD>
+
+
+<BODY>
+
+
+<!--<img src="afeder.jpg" width="12%" height="12%"><br>-->
+<DIV class="bar">
+
+
+<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
+<P class="link"><A href="#" class="minlink" onclick="researchShow();">Research</A></P>
+<P class="link"><A href="#" class="minlink" onclick="mediaShow();">Other media</A></P>
+<P class="link"><A href="#" class="minlink"
+		   onclick="projectsShow();">Brief CV</A></P>
+<P class="link"><A href="#" class="minlink"
+		   onclick="courseworkShow();">Contact</A></P>
+
+</DIV>
+
+
+
+<DIV class="content">
+  
+  
+
+  <DIV id="abstract">
+
+<h2> Alison F. Feder </h2>
+<hr>
+<img src = "img/afeder_headshot.jpg" width = "30%" height = "30%" style="float:left;margin:0 15px 0 0px;">
+I combine evolutionary theory, simulation and experimentally- and
+      clinically-derived sequencing data to better understand
+      adaptation in time and space. I'm currently a Miller Fellow with Oskar Hallatschek and Monty Slatkin in the Department of Integrative
+      Biology at Berkeley. Previously, I received my PhD in Biology at Stanford University advised by <a href = "http://petrov.stanford.edu" class = "minlink">Dmitri Petrov</a>. 
+
+    
+    </DIV>
+
+  <DIV id="coursework">
+
+<h2>Contact</h2>
+<hr>
+<ul>
+<li>e-mail: affeder@berkeley.edu
+</ul>
+
+You can also <a href="https://twitter.com/AlisonFeder" class =
+    "minlink"> find me on Twitter</a>. <br> <br>
+
+</DIV>
+
+
+<DIV id="research">
+<h2>Research</h2>
+    <hr>
+    
+Here are some of the projects I've worked on over the past several
+  years, and you can find a current list of publications on <a href =
+  "https://scholar.google.com/citations?user=QZHV8SkAAAAJ&hl=en" class =
+  "minlink">Google scholar</a>. <br>
+   
+  
+
+ <hr>
+<br>
+    <img src = "img/fig10.jpg" style="float:left;margin:0 15px 0 0;">
+<em>Evolutionary Dynamics in Structured Populations Under Strong
+    Population Genetic Forces </em> (2019)
+
+  [<a href =
+  "https://www.g3journal.org/content/9/10/3395" class =
+    "minlink">paper in G3</a>]  <br><br>
+     Alison Feder, Pleuni Pennings, Joachim Hermisson*, Dmitri Petrov*
+<br><br>
+
+    
+ <hr>
+<br>
+    <img src = "img/fig12.jpg" style="float:left;margin:0 15px 0 0;">
+<em>The Relationship Between Haplotype-Based FST and Haplotype
+    Length (2019)</em><br>
+
+    [<a href =
+  "https://www.genetics.org/content/213/1/281h" class =
+    "minlink">paper in Genetics</a>, <a href =
+    "https://www.youtube.com/watch?v=rcPc4J9wh_g" class =
+    "minlink">video abstract</a>]  <br><br>
+    Rohan Mehta, Alison Feder, Simina Boca, Noah Rosenberg
+    <br><br>
+
+<hr>
+<br>
+    <img src = "img/fig11.jpg" style="float:left;margin:0 15px 0 0;">
+<em> The clarifying role of time series data in the population
+    genetics of HIV </em>
+    (2018) <br>
+    [<a href =
+  "https://www.biorxiv.org/content/10.1101/495275v2"
+    class = "minlink">bioRxiv</a>] 
+<br><br>
+Alison Feder, Pleuni Pennings, Dmitri Petrov
+<br><br><br>
+
+    
+ <hr>
+<br>
+    <img src = "img/fig8.jpg" style="float:left;margin:0 15px 0 0;">
+<em> Within-patient HIV mutation frequencies reveal fitness costs of CpG
+  dinucleotides, drastic amino acid changes and G->A mutations </em>
+  (2018) <br> [<a href =
+  "http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007420"
+    class = "minlink">paper in PLOS Genetics</a>] 
+<br><br>
+Kristof Theys*, Alison Feder*, Maoz Gelbart*, Marion Hartl, Adi Stern, Pleuni Pennings
+<br><br>
+
+ <hr>
+<br>
+    <img src = "img/fig9.jpg" style="float:left;margin:0 15px 0 0;">
+<em>High resolution spatio-temporal assessment of SHIV evolution reveals a highly dynamic
+  process within the host </em> (2017)  <br> [<a href =
+  "http://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006358"
+  class = "minlink">paper in PLOS Pathogens</a>,<a href
+  = "https://www.youtube.com/watch?v=HVBCLO_IptY" class = "minlink">video
+							 abstract</a>]
+<br><br>
+Alison Feder, Christopher Kline, Patricia Polacino, Mackenzie
+    Cottrell, Angela Kashuba, Brandon Keele, Shiu-Lok Hu, Dmitri Petrov, Pleuni Pennings, Zandrea Ambrose
+<br><br>
+
+
+ <hr>
+<br>
+    <img src = "img/fig6.jpg" style="float:left;margin:0 15px 0 0;">
+
+<em>More effective drugs lead to harder selective sweeps in the evolution
+							 of drug
+							 resistance in
+							 HIV-1</em> (2016)<br> [<a href =
+					  "http://elifesciences.org/content/5/e10670"
+							 class =
+							 "minlink">paper
+							 in eLife</a>,
+						 <a href =
+							 "https://www.youtube.com/watch?v=43M55F_g9zM&feature=youtu.be"
+							 class = "minlink">video
+							 abstract</a>] <br><br>
+Alison Feder, Soo-Yon Rhee, Susan Holmes, Bob Shafer, Dmitri Petrov and Pleuni Pennings
+<br><br>
+ <hr>
+<br>
+    <img src = "img/fig7.jpg" style="float:left;margin:0 15px 0 0;">
+
+<em>The population genetics of drug resistance evolution in natural
+ populations of viral, bacterial and eukaryotic pathogens.</em> (2016)  <br>[<a
+ href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4943078/" class
+ = "minlink">paper in Molecular Ecology</a>] 
+<br><br>
+Ben Wilson*, Nandita Garud*, Alison Feder*, Zoe Assaf*, and Pleuni Pennings
+ 
+<br><br>
+ 
+      <hr>
+<br>
+    <img src = "img/fig2.jpg" style="float:left;margin:0 15px 0
+    0;"><br> <em>Identifying Signatures of Selection in Genetic Time
+    Series </em> (2014)  <br> [<a href =
+      "http://www.ncbi.nlm.nih.gov/pubmed/24318534"
+      class="minlink">paper in Genetics</a>] </li><br><br>
+Alison Feder*, Sergey Kryazhimskiy*, Joshua Plotkin<br><br>
+
+
+      <hr>
+<br>
+    <img src = "img/fig5.jpg" style="float:left;margin:0 15px 0 0;">
+      <em>Comparative analysis of derived mutations across human
+      populations</em> (2013)   <br>
+[<a href =
+      "http://ora.ox.ac.uk/objects/uuid:9cd8594b-cd35-4ca7-94dd-f9dc11e8cd36"
+      class = "minlink">MSc
+      thesis</a>]</li>
+     <br><br>Alison Feder (advised by Gil McVean) <br>  <br><br> 
+    
+
+
+
+        <hr>
+    <img src = "img/fig3.jpg" style="float:left;margin:0 15px 0 0;">
+    
+    <br>
+    <em>LDx: estimation of linkage disequilibrium from high-throughput pooled resequencing data.</em> <br> [<a href =
+    "http://www.ncbi.nlm.nih.gov/pubmed/23152785" class =
+    "minlink">paper in PLOS One</a>, <a href =
+    "https://sourceforge.net/p/ldx/wiki/Home/" class="minlink">download LDx</a>]</li><br><br>
+  Alison Feder, Dmitri Petrov, Alan Bergland <br> <br>
+
+  <hr>
+      
+    <img src = "img/fig4.jpg" style="float:left;margin:0 15px 0 0;"> 
+    
+    
+    
+<br>    <em>Natural selection affects multiple aspects of genetic variation at putatively neutral sites across the human genome. </em> <br> [<a href =
+		      "http://www.ncbi.nlm.nih.gov/pubmed/22022285" class =
+  "minlink">paper in PLOS Genetics</a>]
+  </li><br>
+<br> Kirk Lohmueller, Anders Albrechtsen, Yingrui Li, Su Yeon Kim,
+		      Thorfinn Korneliussen, Nicolas Vinckenbosch,
+		      Geng Tian, Emilia Huerta-Sanchez, Alison Feder,
+		      Niels Grarup, Torben Jørgensen, Tao Jiang,
+		      Daniel R. Witte, ... , Rasmus Nielsen
+    <br>
+    <hr>
+    <img src = "img/fig1.jpg" style="float:left;margin:0 15px 0 0;"><br><em>Estimating the bias incurred when estimating phylogenetic timescales with incorrect nucleotide substitution models</em></li><br><br>
+with Warren Ewens - Spring 2009 <br>  <br>
+
+
+
+  </DIV>
+
+  <DIV id="media">
+
+<h2> Other media </h2>
+      <hr>
+
+      <ul>
+      <li>Video abstract for 'The Relationship Between Haplotype-Based FST and Haplotype Length
+':
+</ul>
+
+<iframe width="560" height="315"
+      src="https://www.youtube.com/embed/rcPc4J9wh_g" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+
+      
+<ul>
+
+<li>Here's my <a href = "https://vimeo.com/305062176" class = "minlink">Milner Prize lecture</a> from September, 2018. <br><br>
+
+<li>Here's my talk from the <a href =
+    "https://www.youtube.com/watch?v=ntM0448h2lA"
+    class = "minlink">Crow Award Finalist symposium</a> at PEQG in May, 2018. <br><br>
+    
+<li>Here's a <a href =
+    "https://fredhutch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b0792a6f-30e1-4091-b6da-2454791b491d"
+    class = "minlink">seminar</a>  I gave at the Center for the Inference and
+Dynamics of Infectious Disease (CIDID) at the Fred Hutch in September,
+2017: <br><br>
+
+
+<li>Video abstract for 'A spatio-temporal assessment of simian/human
+immunodeficiency virus (SHIV) evolution reveals a highly dynamic process
+within the host': 
+</ul>
+<iframe width="560" height="315"
+	src="https://www.youtube.com/embed/HVBCLO_IptY" frameborder="0"
+	allowfullscreen></iframe>
+<br><br>
+
+<ul>
+<li>A Muller diagram I drew was featured
+  as <a href="https://wol-prod-cdn.literatumonline.com/pb-assets/assets/1365294X/25-1-1509465293000.jpg"
+  class = "minlink">part of the cover</a> of Molecular  Ecology's special issue on 'Detecting Selection in Natural Populations.' <br><br>
+
+
+<li>Video abstract for 'More efficient drugs lead to harder sweeps in the evolution of drug
+resistance in HIV-1':
+</ul>
+<iframe width="560" height="315"
+	src="https://www.youtube.com/embed/43M55F_g9zM" frameborder="0"
+	allowfullscreen></iframe>
+
+
+    </DIV>
+
+  <DIV id="coursework">
+
+<h2>Contact</h2>
+<hr>
+<ul>
+<li>e-mail: affeder@berkeley.edu
+</ul>
+Stanley Hall, 260K<br> <br>
+Berkeley, CA 94720
+
+</DIV>
+
+
+
+<DIV id="projects">
+  
+<h2>Brief CV</h2> <a href = "afeder_cv_2019_10_10.pdf" class = "minlink">[Full CV]</a>
+
+<hr>
+<ul>
+<li><b>Current: Miller Fellow</b><br>UC Berkeley, 2018-present<br>
+<li><b>PhD Biology</b><br>Stanford University, 2018<br>
+<li><b>MSc (Res) Statistics</b><br>University of Oxford, 2013<br>
+<li><b>BA Mathematics</b><br>University of Pennsylvania, 2012<br>
+</ul>
+
+<hr>
+I have been fortunate to receive support from:<br>
+<a href ="http://miller.berkeley.edu/">
+<img src="http://miller.berkeley.edu/images/events/60/knot_blue_clearbg.jpg" width="12.5%" height="12.5%" style="float:left margin: 2px"></a>
+<a href = "https://vpge.stanford.edu/fellowships-funding/gerald-j-lieberman-fellowship/details">
+<img src="img/funding/vpge.png" width="9%" height="9%" style="float:left margin: 2px"></a>
+<a href = "https://www.nsfgrfp.org">
+<img src="img/funding/nsf-logo.png" width="15%" height="15%" style="float:left margin: 2px"></a>
+<a href = "https://cehg.stanford.edu/fellowship-program">
+<img src="img/funding/cehg.png" width="10%" height="10%" style="float:left margin: 2px"></a>
+<a href = "https://www.thouronaward.org/">
+<img src="img/funding/thouron_badge.gif" width="20%" height="20%" style="float:left margin: 2px"></a>
+<a href = "http://www.amgenscholars.com/">
+<img src="img/funding/amgen.png" width="15%" height="15%"   style="float:right margin: 2px"></a><br>
+
+ <br>
+
+
+  </DIV>
+
+</DIV>
+
+
+</BODY>
+
+</html>
+
+
+
