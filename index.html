@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <HEAD>
 
-<TITLE>Alison Feder</TITLE>
+<TITLE>Feder Research Group in Evolutionary Dynamics</TITLE>
 <!--This design borrows extensively from Joshua Plotkin's site http://mathbio.sas.upenn.edu -->
 
 <STYLE type="text/css">
@@ -17,13 +18,13 @@ font-family: "Avenir", sans-serif, Courier, Serif;
 DIV.content
 {
 border: 0px solid #5f5f5f;
-width: 525px;
+width: 550px;
 margin: 0;
 padding: 1em;
 position: absolute;
 background-color: #FFFFFF;
 left: 240px;
-top: 50px;
+top: 20px;
 }
 
 DIV.bar
@@ -35,7 +36,7 @@ margin: 0;
 padding: 0;
 position: absolute;
 left: 65px;
-top: 80px;
+top: 45px;
 text-align: right;
 }
 
@@ -70,7 +71,18 @@ text-decoration: none;
 font-weight: bold;
 }
 
-#coursework
+.footer {
+  position: fixed;
+margin: 0;
+padding: 0;
+left: 50px;
+bottom: 20px;
+  }
+
+
+
+
+#contact
 {
 display: none;
 }
@@ -85,7 +97,12 @@ display: block;
 display: none;
 }
 
-#projects
+#publications
+{
+display: none;
+}
+
+#people
 {
 display: none;
 }
@@ -95,6 +112,12 @@ display: none;
 display: none;
 }
 
+#lab
+{
+display: none;
+}
+
+
 
 </STYLE>
 
@@ -103,48 +126,79 @@ display: none;
 function homeShow()
 {
 document.getElementById("abstract").style.display="block";
-document.getElementById("coursework").style.display="none";
-document.getElementById("research").style.display="none";
-document.getElementById("projects").style.display="none";
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
 document.getElementById("media").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
 }
 
-function courseworkShow()
+function contactShow()
 {
-document.getElementById("coursework").style.display="block";
-document.getElementById("research").style.display="none";
-document.getElementById("projects").style.display="none";
+document.getElementById("contact").style.display="block";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
 document.getElementById("abstract").style.display="none";
 document.getElementById("media").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
 }
 
-function researchShow()
+function publicationsShow()
 {
-document.getElementById("coursework").style.display="none";
-document.getElementById("research").style.display="block";
-document.getElementById("projects").style.display="none";
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="block";
+document.getElementById("people").style.display="none";
 document.getElementById("abstract").style.display="none";
 document.getElementById("media").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
 }
 
-function projectsShow()
+function peopleShow()
 {
-document.getElementById("coursework").style.display="none";
-document.getElementById("research").style.display="none";
-document.getElementById("projects").style.display="block";
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="block";
 document.getElementById("abstract").style.display="none";
 document.getElementById("media").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
 }
 
 function mediaShow()
 {
-document.getElementById("coursework").style.display="none";
-document.getElementById("research").style.display="none";
-document.getElementById("media").style.display="block";
-document.getElementById("projects").style.display="none";
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
 document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="block";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+}
+
+function researchShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("lab").style.display="none";
+}
 
 
+function labShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="block";
 }
 
 </SCRIPT>
@@ -161,6 +215,8 @@ document.getElementById("abstract").style.display="none";
   })();
 
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 </HEAD>
 
 
@@ -170,14 +226,13 @@ document.getElementById("abstract").style.display="none";
 <!--<img src="afeder.jpg" width="12%" height="12%"><br>-->
 <DIV class="bar">
 
-
 <P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
 <P class="link"><A href="#" class="minlink" onclick="researchShow();">Research</A></P>
-<P class="link"><A href="#" class="minlink" onclick="mediaShow();">Other media</A></P>
-<P class="link"><A href="#" class="minlink"
-		   onclick="projectsShow();">Brief CV</A></P>
-<P class="link"><A href="#" class="minlink"
-		   onclick="courseworkShow();">Contact</A></P>
+<P class="link"><A href="#" class="minlink" onclick="labShow();">Lab (Opening 2021)</A></P>
+<P class="link"><A href="#" class="minlink" onclick="publicationsShow();">Publications</A></P>
+<P class="link"><A href="#" class="minlink" onclick="peopleShow();">Team</A></P>
+<P class="link"><A href="#" class="minlink" onclick="mediaShow();">Media</A></P>
+<P class="link"><A href="#" class="minlink" onclick="contactShow();">Contact</A></P>
 
 </DIV>
 
@@ -185,28 +240,95 @@ document.getElementById("abstract").style.display="none";
 
 <DIV class="content">
   
-  
+
 
   <DIV id="abstract">
 
-<h2> Alison F. Feder </h2>
+    <h2> Feder Research Group in Evolutionary Dynamics </h2>
 <hr>
-<img src = "img/afeder_headshot.jpg" width = "30%" height = "30%" style="float:left;margin:0 15px 0 0px;">
-I combine evolutionary theory, simulation and experimentally- and
-      clinically-derived sequencing data to better understand
-	  adaptation in time and space. I'm currently a <a href = "http://miller.berkeley.edu/" class = "minlink">Miller Fellow</a> with <a href = "http://hallatscheklab.berkeley.edu/" class = "minlink">Oskar Hallatschek</a> and <a href = "http://ib.berkeley.edu/labs/slatkin/monty/monty.html" class = "minlink">Monty Slatkin</a> in the Department of Integrative
-	  Biology at Berkeley. Previously, I received my PhD in Biology at Stanford advised by <a href = "http://petrov.stanford.edu" class = "minlink">Dmitri Petrov</a>. 
 
-    
+
+Our goal is to understand the dynamics of rapidly-changing populations, especially viruses evolving within their hosts and solid tumors. In particular, we are characterizing how spatial organization shapes these evolutionary outcomes, and developing approaches to leverage spatial data to better understand evolutionary histories. To do this, we combine approaches from population genetics and Bayesian phylogenetics with next generation sequencing and imaging data.
+<br><br>
+
+The lab will be opening in Summer 2021 in the <a
+    href="https://www.gs.washington.edu/" class = "minlink">Department
+    of Genome Sciences</a> at the University of Washington. To learn
+    more about the goals of the lab, please check out the <a href="#" class="minlink" onclick="researchShow();">research</a> and <a href="#" class="minlink" onclick="publicationsShow();">publication</a> pages.<br> <br>
+
+    The lab will accept graduate students through the <a href =
+    "https://www.gs.washington.edu/academics/gradprogram/index.htm"
+    class = "minlink">Genome
+    Sciences</a>
+    PhD
+    program. Prospective graduate students, rotation students and postdoctoral fellows are encouraged to <a href="#" class="minlink" onclick="contactShow();">get
+    in touch</a> with Alison. 
+
+    <br><br><a href
+    = "http://www.washington.edu/"> <img src = "img/UW_logo.png" width = "50%" height = "50%"
+    style="display:block; margin-left: auto; margin-right: auto;" ></a>
+
+
+<div class="footer">
+<a href="https://www.ocf.berkeley.edu">
+<img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
+     alt="Hosted by the OCF" style="border: 0;">
+</a>
+</div>
+
     </DIV>
 
-  <DIV id="coursework">
+      <DIV id="research">
+
+<h2> Research </h2>
+<hr>
+
+	  Population genetics was developed around the idea that adaptive variation is rare, and populations must typically wait for the next beneficial mutation. However, we increasingly realize that in a wide variety of natural populations, including pathogens evolving in their hosts and cancer cells in tumors, many beneficial mutations exist simultaneously (i.e., ones that increase growth rate or allow replication in the presence of drugs) and those mutations can spread in concert. Even though such populations create some of the world's most urgent medical and agricultural problems, our understanding of their evolution is limited by the historical assumptions of population-genetic theory. In the Feder lab, our goal is to understand evolutionary dynamics in this era of abundant genetic variation.				<br><br>
+Spatial structure becomes crucially important in the regime where populations rapidly produce beneficial mutations. Structure sets the pace for how beneficial mutations compete and spread. This provides both opportunity and challenge: watching how mutations spread in space allows crucial insights into the degree of parallelism in adaptation, the way that beneficial mutations interact to influence fitness, and the underlying natural history of these populations. However, spatial structure also shapes the adaptive responses themselves. As a result, where beneficial mutations happen to arise may be more important for the ensuing population dynamics than what the mutations are at the molecular scale. When space constrains competition we have an incomplete theoretical understanding of the resulting population dynamics. Despite the growing availability of spatially-resolved genetic data, we need new techniques to draw inferences from spatially and temporally-sampled populations, and corresponding new frameworks to understand the patterns that rapid evolution leaves in time and space.				
+	<br><br>
+We combine evolutionary theory and computation with genomic data sampled from clinical and experimental settings to understand the forces that drive rapid adaptation across space. We work across multiple types of spatial organization, considering especially rapid within-host viral evolution and adaptive dynamics in solid tumors. We leverage data collected in time series and with explicit attention to spatial location, and develop new quantitative techniques to analyze data of this form. We characterize the patterns rapid adaptation leaves in space and through time, and in turn, determine how space can and does shape these processes. 
+
+</DIV>
+
+<DIV id="lab">
+<h2> Lab </h2>
+<hr>
+
+The Feder lab will be opening in Summer 2021 in the <a
+    href="https://www.gs.washington.edu/" class = "minlink">Department
+    of Genome Sciences</a> at the University of Washington. To learn
+    more about the goals of the lab, please check out the <a href="#" class="minlink" onclick="researchShow();">research</a> and <a href="#" class="minlink" onclick="publicationsShow();">publication</a> pages.<br> <br>
+
+    The lab will accept graduate students through the <a href =
+    "https://www.gs.washington.edu/academics/gradprogram/index.htm"
+    class = "minlink">Genome
+    Sciences</a>
+ <!--   and <a href = "https://mcb-seattle.edu/" class = "minlink">
+    Molecular & Cellular Biology</a> -->
+    PhD
+    program. Prospective graduate students, rotation students and postdoctoral fellows are encouraged to <a href="#" class="minlink" onclick="contactShow();">get
+    in touch</a> with Alison. 
+
+    
+    <br><br><a href
+    = "http://www.washington.edu/"> <img src = "img/UW_logo.png" width = "50%" height = "50%"
+    style="display:block; margin-left: auto; margin-right: auto;" ></a>
+
+    
+</DIV>
+
+
+
+  <DIV id="contact">
 
 <h2>Contact</h2>
 <hr>
-<ul>
-<li>e-mail: affeder@berkeley.edu
+<ul style="list-style: none;">
+<li>E-mail: affeder@berkeley.edu<br>
+<li>Office: Stanley Hall, 260K<br>Berkeley, CA 94720<br>
+
 </ul>
+I use she/her pronouns.<br><br>
 
 You can also <a href="https://twitter.com/AlisonFeder" class =
     "minlink"> find me on Twitter</a>. <br> <br>
@@ -214,94 +336,71 @@ You can also <a href="https://twitter.com/AlisonFeder" class =
 </DIV>
 
 
-<DIV id="research">
-<h2>Research</h2>
+<DIV id="publications">
+<h2>Publications</h2>
     <hr>
     
-Here are some of the projects I've worked on over the past several
-  years, and you can find a current list of publications on <a href =
+You can find a current and complete list of publications on <a href =
   "https://scholar.google.com/citations?user=QZHV8SkAAAAJ&hl=en" class =
-  "minlink">Google scholar</a>. <br>
-   
-	 <hr>
-	
-      <img src = "img/blank.jpg" style="float:left;margin:0 15px 0 0;">
-<em>Challenging conventional wisdom on the evolution of resistance to multi-drug HIV treatment: Lessons from data and modeling. </em> (2019) <br>[<a href =
+  "minlink">Google scholar</a>. 
+  <br>
+ <hr>
+
+    <img src = "img/fig13.jpg" style="float:left;margin:0 15px 0 0;">
+<em>Challenging conventional wisdom on the evolution of resistance to multi-drug HIV treatment: Lessons from data and modeling </em> (2019) <br>[<a href =
   "https://www.biorxiv.org/content/10.1101/807560v1" class = "minlink">pre-print</a>]<br><br> Alison Feder, Kristin Harper, Pleuni Pennings
 <br><br>
 
-
-
  <hr>
-<br>
+
     <img src = "img/fig10.jpg" style="float:left;margin:0 15px 0 0;">
-<em>Evolutionary Dynamics in Structured Populations Under Strong
-    Population Genetic Forces </em> (2019)
-
-  [<a href =
-  "https://www.g3journal.org/content/9/10/3395" class =
-    "minlink">paper in G3</a>]  <br><br>
-     Alison Feder, Pleuni Pennings, Joachim Hermisson*, Dmitri Petrov*
+<em> Evolutionary dynamics in structured populations under strong
+population genetic forces </em> (2019) <br>[<a href =
+  "https://www.g3journal.org/content/9/10/3395" class = "minlink">paper in G3</a>]<br><br> Alison Feder, Pleuni Pennings, Joachim Hermisson*, Dmitri Petrov*
 <br><br>
 
-    
  <hr>
-<br>
+
     <img src = "img/fig12.jpg" style="float:left;margin:0 15px 0 0;">
-<em>The Relationship Between Haplotype-Based FST and Haplotype
-    Length (2019)</em><br>
-
-    [<a href =
-  "https://www.genetics.org/content/213/1/281h" class =
-    "minlink">paper in Genetics</a>, <a href =
-    "https://www.youtube.com/watch?v=rcPc4J9wh_g" class =
-    "minlink">video abstract</a>]  <br><br>
-    Rohan Mehta, Alison Feder, Simina Boca, Noah Rosenberg
-    <br><br>
-
-<hr>
-<br>
-    <img src = "img/fig11.jpg" style="float:left;margin:0 15px 0 0;">
-<em> The clarifying role of time series data in the population
-    genetics of HIV </em>
-    (2018) <br>
-    [<a href =
-  "https://www.biorxiv.org/content/10.1101/495275v2"
-    class = "minlink">pre-print</a>] 
+<em> The relationship between haplotype-based FST and haplotype length </em> (2019) <br>[<a href = "https://www.genetics.org/content/213/1/281" class = "minlink">paper in Genetics</a>, <a href = "https://www.youtube.com/watch?v=rcPc4J9wh_g" class = "minlink">video abstract</a>]
+  <br><br> Rohan Mehta, Alison Feder, Simina Boca, Noah Rosenberg
 <br><br>
-Alison Feder, Pleuni Pennings, Dmitri Petrov
-<br><br><br>
 
-    
  <hr>
-<br>
+    <img src = "img/fig11.jpg" style="float:left;margin:0 15px 0 0;">
+<br><em>The clarifying role of time series data in the population genetics of HIV </em> (2018)  <br> [<a href =
+  "https://www.biorxiv.org/content/early/2018/12/29/495275" class = "minlink">pre-print</a>] <br><br> Alison Feder, Pleuni Pennings, Dmitri Petrov
+<br><br>
+
+ <hr>
+
     <img src = "img/fig8.jpg" style="float:left;margin:0 15px 0 0;">
 <em> Within-patient HIV mutation frequencies reveal fitness costs of CpG
   dinucleotides, drastic amino acid changes and G->A mutations </em>
-  (2018) <br> [<a href =
-  "http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007420"
-    class = "minlink">paper in PLOS Genetics</a>] 
+  (2018)  <br>
+[<a href =
+  "http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007420" class = "minlink">paper in PLOS Genetics</a>] 
 <br><br>
 Kristof Theys*, Alison Feder*, Maoz Gelbart*, Marion Hartl, Adi Stern, Pleuni Pennings
-<br><br>
+<br>
 
  <hr>
-<br>
     <img src = "img/fig9.jpg" style="float:left;margin:0 15px 0 0;">
 <em>High resolution spatio-temporal assessment of SHIV evolution reveals a highly dynamic
-  process within the host </em> (2017)  <br> [<a href =
+  process within the host </em> (2017) <br>
+[<a href =
   "http://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006358"
-  class = "minlink">paper in PLOS Pathogens</a>,<a href
+  class = "minlink">paper in PLOS Pathogens</a>, <a href
   = "https://www.youtube.com/watch?v=HVBCLO_IptY" class = "minlink">video
 							 abstract</a>]
 <br><br>
 Alison Feder, Christopher Kline, Patricia Polacino, Mackenzie
-    Cottrell, Angela Kashuba, Brandon Keele, Shiu-Lok Hu, Dmitri Petrov, Pleuni Pennings, Zandrea Ambrose
-<br><br>
+    Cottrell, Angela Kashuba, Brandon Keele, Shiu-Lok Hu, Dmitri Petrov, Pleuni Pennings*, Zandrea Ambrose*
+<br>
 
 
  <hr>
-<br>
+
     <img src = "img/fig6.jpg" style="float:left;margin:0 15px 0 0;">
 
 <em>More effective drugs lead to harder selective sweeps in the evolution
@@ -309,61 +408,42 @@ Alison Feder, Christopher Kline, Patricia Polacino, Mackenzie
 							 resistance in
 							 HIV-1</em> (2016)<br> [<a href =
 					  "http://elifesciences.org/content/5/e10670"
-							 class =
-							 "minlink">paper
-							 in eLife</a>,
+							 class = "minlink">paper in eLife</a>,
 						 <a href =
 							 "https://www.youtube.com/watch?v=43M55F_g9zM&feature=youtu.be"
 							 class = "minlink">video
 							 abstract</a>] <br><br>
-Alison Feder, Soo-Yon Rhee, Susan Holmes, Bob Shafer, Dmitri Petrov and Pleuni Pennings
+Alison Feder, Soo-Yon Rhee, Susan Holmes, Bob Shafer, Dmitri Petrov* and Pleuni Pennings*
 <br><br>
  <hr>
-<br>
+
     <img src = "img/fig7.jpg" style="float:left;margin:0 15px 0 0;">
 
-<em>The population genetics of drug resistance evolution in natural
- populations of viral, bacterial and eukaryotic pathogens.</em> (2016)  <br>[<a
- href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4943078/" class
- = "minlink">paper in Molecular Ecology</a>] 
+    <em>The population genetics of drug resistance evolution in natural populations of viral, bacterial and eukaryotic pathogens.</em> (2016)<br>
+    [<a
+ href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4943078/" class = "minlink">paper in Molecular Ecology</a>] 
 <br><br>
 Ben Wilson*, Nandita Garud*, Alison Feder*, Zoe Assaf*, and Pleuni Pennings
  
-<br><br>
- 
-      <hr>
 <br>
-    <img src = "img/fig2.jpg" style="float:left;margin:0 15px 0
-    0;"><br> <em>Identifying Signatures of Selection in Genetic Time
-    Series </em> (2014)  <br> [<a href =
-      "http://www.ncbi.nlm.nih.gov/pubmed/24318534"
-      class="minlink">paper in Genetics</a>] </li><br><br>
-Alison Feder*, Sergey Kryazhimskiy*, Joshua Plotkin<br><br>
-
-
-      <hr>
-<br>
-    <img src = "img/fig5.jpg" style="float:left;margin:0 15px 0 0;">
-      <em>Comparative analysis of derived mutations across human
-      populations</em> (2013)   <br>
-[<a href =
-      "http://ora.ox.ac.uk/objects/uuid:9cd8594b-cd35-4ca7-94dd-f9dc11e8cd36"
-      class = "minlink">MSc
-      thesis</a>]</li>
-     <br><br>Alison Feder (advised by Gil McVean) <br>  <br><br> 
     
 
+
+      <hr>
+    <img src = "img/fig2.jpg" style="float:left;margin:0 15px 0
+    0;"><br> <em>Identifying Signatures of Selection in Genetic Time
+    Series </em> (2014) <br> [<a href = "http://www.ncbi.nlm.nih.gov/pubmed/24318534" class="minlink">paper in Genetics</a>] </li><br><br>
+Alison Feder*, Sergey Kryazhimskiy*, Joshua Plotkin<br><br>
 
 
         <hr>
     <img src = "img/fig3.jpg" style="float:left;margin:0 15px 0 0;">
     
-    <br>
-    <em>LDx: estimation of linkage disequilibrium from high-throughput pooled resequencing data.</em> <br> [<a href =
-    "http://www.ncbi.nlm.nih.gov/pubmed/23152785" class =
-    "minlink">paper in PLOS One</a>, <a href =
+    <em>LDx: estimation of linkage disequilibrium from high-throughput pooled resequencing data.</em> <br>
+[<a href =
+    "http://www.ncbi.nlm.nih.gov/pubmed/23152785" class = "minlink">paper in PLOS One</a>, <a href =
     "https://sourceforge.net/p/ldx/wiki/Home/" class="minlink">download LDx</a>]</li><br><br>
-  Alison Feder, Dmitri Petrov, Alan Bergland <br> <br>
+  Alison Feder, Dmitri Petrov, Alan Bergland <br> <br><br>
 
   <hr>
       
@@ -371,69 +451,43 @@ Alison Feder*, Sergey Kryazhimskiy*, Joshua Plotkin<br><br>
     
     
     
-<br>    <em>Natural selection affects multiple aspects of genetic variation at putatively neutral sites across the human genome. </em> <br> [<a href =
+    <em>Natural selection affects multiple aspects of genetic variation at putatively neutral sites across the human genome. </em> [<a href =
 		      "http://www.ncbi.nlm.nih.gov/pubmed/22022285" class =
   "minlink">paper in PLOS Genetics</a>]
   </li><br>
 <br> Kirk Lohmueller, Anders Albrechtsen, Yingrui Li, Su Yeon Kim,
 		      Thorfinn Korneliussen, Nicolas Vinckenbosch,
 		      Geng Tian, Emilia Huerta-Sanchez, Alison Feder,
-		      Niels Grarup, Torben Jørgensen, Tao Jiang,
+		      Niels Grarup, Torben Jorgensen, Tao Jiang,
 		      Daniel R. Witte, ... , Rasmus Nielsen
     <br>
-    <hr>
-    <img src = "img/fig1.jpg" style="float:left;margin:0 15px 0 0;"><br><em>Estimating the bias incurred when estimating phylogenetic timescales with incorrect nucleotide substitution models</em></li><br><br>
-with Warren Ewens - Spring 2009 <br>  <br>
-
 
 
   </DIV>
 
   <DIV id="media">
 
-<h2> Other media </h2>
-      <hr>
+<h2> Media </h2>
+<hr>
 
-      <ul>
-      <li>Video abstract for 'The Relationship Between Haplotype-Based FST and Haplotype Length
-':
-</ul>
-
-<iframe width="560" height="315"
-      src="https://www.youtube.com/embed/rcPc4J9wh_g" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
-
-      
 <ul>
+<li>Video abstract for 'The Relationship Between Haplotype-Based FST and Haplotype Length':
 
-<li>Here's my <a href = "https://vimeo.com/305062176" class = "minlink">Milner Prize lecture</a> from September, 2018. <br><br>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rcPc4J9wh_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
-<li>Here's my talk from the <a href =
-    "https://www.youtube.com/watch?v=ntM0448h2lA"
-    class = "minlink">Crow Award Finalist symposium</a> at PEQG in May, 2018. <br><br>
-    
-<li>Here's a <a href =
-    "https://fredhutch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b0792a6f-30e1-4091-b6da-2454791b491d"
-    class = "minlink">seminar</a>  I gave at the Center for the Inference and
-Dynamics of Infectious Disease (CIDID) at the Fred Hutch in September,
-2017: <br><br>
-
+<ul>
 
 <li>Video abstract for 'A spatio-temporal assessment of simian/human
 immunodeficiency virus (SHIV) evolution reveals a highly dynamic process
 within the host': 
+
 </ul>
 <iframe width="560" height="315"
 	src="https://www.youtube.com/embed/HVBCLO_IptY" frameborder="0"
 	allowfullscreen></iframe>
 <br><br>
-
-<ul>
-<li>A Muller diagram I drew was featured
-  as <a href="https://wol-prod-cdn.literatumonline.com/pb-assets/assets/1365294X/25-1-1509465293000.jpg"
-  class = "minlink">part of the cover</a> of Molecular  Ecology's special issue on 'Detecting Selection in Natural Populations.' <br><br>
-
 
 <li>Video abstract for 'More efficient drugs lead to harder sweeps in the evolution of drug
 resistance in HIV-1':
@@ -445,49 +499,41 @@ resistance in HIV-1':
 
     </DIV>
 
-  <DIV id="coursework">
+ <DIV id="contact">
 
 <h2>Contact</h2>
 <hr>
 <ul>
-<li>e-mail: affeder@berkeley.edu
+<li>e-mail: afeder@stanford.edu
 </ul>
-Stanley Hall, 260K<br> 
-Berkeley, CA 94720<br><br>
+Department of Biology<br>
+371 Serra St.<br>
+Stanford University<br>
+Stanford, CA 94305-5020<br> <br>
 
-I use she/her pronouns. 
+
 </DIV>
 
 
 
-<DIV id="projects">
+<DIV id="people">
   
-<h2>Brief CV</h2> <a href = "afeder_cv_2019_10_10.pdf" class = "minlink">[Full CV]</a>
+<h2>Team</h2>
 
 <hr>
-<ul>
-<li><b>Current: Miller Fellow</b><br>UC Berkeley, 2018-present<br>
-<li><b>PhD Biology</b><br>Stanford University, 2018<br>
-<li><b>MSc (Res) Statistics</b><br>University of Oxford, 2013<br>
-<li><b>BA Mathematics</b><br>University of Pennsylvania, 2012<br>
-</ul>
+
+
+<img src = "img/afeder_headshot.jpg" width = "30%" height = "30%" style="float:left;margin:5px 15px 5px 5px;">
+<h3>Alison Feder</h3>
+Principal investigator
+[<a href="afeder_cv.pdf" class="minlink" onClick="ga('send', 'pageview', 'cv.pdf');">CV</a>]
+<br><br><br><br><br><br>
+
+
 
 <hr>
-I have been fortunate to receive support from:<br>
-<a href ="http://miller.berkeley.edu/">
-<img src="http://miller.berkeley.edu/images/events/60/knot_blue_clearbg.jpg" width="12.5%" height="12.5%" style="float:left margin: 2px"></a>
-<a href = "https://vpge.stanford.edu/fellowships-funding/gerald-j-lieberman-fellowship/details">
-<img src="img/funding/vpge.png" width="9%" height="9%" style="float:left margin: 2px"></a>
-<a href = "https://www.nsfgrfp.org">
-<img src="img/funding/nsf-logo.png" width="15%" height="15%" style="float:left margin: 2px"></a>
-<a href = "https://cehg.stanford.edu/fellowship-program">
-<img src="img/funding/cehg.png" width="10%" height="10%" style="float:left margin: 2px"></a>
-<a href = "https://www.thouronaward.org/">
-<img src="img/funding/thouron_badge.gif" width="20%" height="20%" style="float:left margin: 2px"></a>
-<a href = "http://www.amgenscholars.com/">
-<img src="img/funding/amgen.png" width="15%" height="15%"   style="float:right margin: 2px"></a><br>
 
- <br>
+
 
 
   </DIV>
@@ -498,6 +544,11 @@ I have been fortunate to receive support from:<br>
 </BODY>
 
 </html>
+
+
+
+
+
 
 
 
