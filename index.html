@@ -121,7 +121,10 @@ display: none;
 display: none;
 }
 
-
+#jc
+{
+display: none;
+}
 
 </STYLE>
 
@@ -137,6 +140,7 @@ document.getElementById("media").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function contactShow()
@@ -149,6 +153,7 @@ document.getElementById("media").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function publicationsShow()
@@ -161,6 +166,7 @@ document.getElementById("media").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function peopleShow()
@@ -173,6 +179,7 @@ document.getElementById("media").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function mediaShow()
@@ -185,6 +192,7 @@ document.getElementById("media").style.display="block";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function researchShow()
@@ -197,6 +205,7 @@ document.getElementById("people").style.display="none";
 document.getElementById("research").style.display="block";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 
@@ -210,6 +219,7 @@ document.getElementById("people").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="block";
 document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="none";
 }
 
 function newsShow()
@@ -222,6 +232,20 @@ document.getElementById("people").style.display="none";
 document.getElementById("research").style.display="none";
 document.getElementById("lab").style.display="none";
 document.getElementById("news").style.display="block";
+document.getElementById("jc").style.display="none";
+}
+
+function jcShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("jc").style.display="block";
 }
 
 
@@ -264,6 +288,8 @@ document.getElementById("news").style.display="block";
 <P class="link"><A href="#" class="minlink" onclick="newsShow();">News</A></P>
 <P class="link"><A href="#" class="minlink" onclick="joinShow();">Join</A></P>
 <P class="link"><A href="#" class="minlink" onclick="mediaShow();">Media</A></P>
+<P class="link"><A href="#" class="minlink"
+    onclick="jcShow();">Journal clubs</A></P>
 <P class="link"><A href="#" class="minlink" onclick="contactShow();">Contact</A></P>
 
 </DIV>
@@ -401,7 +427,7 @@ As a postdoctoral fellow, you will have the opportunity to
     admittance to the program. Applications are due Dec 1.  <br><br>
 
     
-    Currently a grad student in GS interested in a rotation? Feel free to reach out to chat about project ideas! <br>
+    Currently a grad student in GS or MCB interested in a rotation? Feel free to reach out to chat about project ideas! <br>
  <br>
         <hr>
 
@@ -693,6 +719,38 @@ You? Learn more about <a
     
   </DIV>
 
+
+
+  
+  <DIV id="jc">
+
+    <h2> Journal Clubs </h2>
+<hr>
+
+
+      We organize two journal clubs focused on the evolution and genomics of cancer and HIV. 
+
+      <br>
+<ul>
+<li>Our cancer evolution journal club is organized jointly with
+     <a href="https://mcfarlandlab.org/" class
+      = "minlink">Chris McFarland</a> (Case Western), and more details can be found
+      <a
+     href="https://docs.google.com/spreadsheets/d/1Q4IfEMsGAboWRUwE9lbcHbY5M7mJDcHBPpddfIIsU7A/edit?usp=sharing"
+     class = "minlink">here</a>. 
+<li>Our HIV evolution and genomics journal club is organized jointly
+      with <a href="https://www.fredhutch.org/en/faculty-lab-directory/cohn-lillian.html/" class
+      = "minlink">Lillie Cohn</a> (FHCRC) and <a href="https://dbrvs.org/" class
+      = "minlink">Dan Reeves</a> (FHCRC), and more details can be
+      found <a
+      href="https://docs.google.com/spreadsheets/d/1XhdVslzCrcvIa_nD-1_1XsZN7yAHAKchPtsoDYYqoUI/edit?usp=sharing"
+      class = "minlink">here</a>. 
+
+</ul>
+
+      All are welcome to join. 
+      
+  </DIV>
 
 
   
